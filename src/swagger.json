@@ -1,0 +1,114 @@
+{
+  "openapi": "3.0.0",
+
+  "info": {
+    "title": "Swagger Petstore",
+    "description": "API para formulário em React e NodeJS",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+  
+      "url": "http://localhost.3000",
+      "description": "ambiente de desenvolvimento"
+    
+    }
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "summary": "Cadastro de candidatos",
+        "description": "Rota de cadastro de usuário, onde se recebe nome, cargo, nascimento, ecivil, genero, endereco, bairro, cidade, cep, telefone1, telefone2, celular, contato, email, identidade, cpf, veiculo, habilitacao",
+        "tags": ["candidato"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "nome": {
+                    "type": "string"
+                  },
+                  "cargo": {
+                    "type": "String"
+                  },
+                  "nascimento": {
+                    "type": "string"
+                  },
+                  "ecivil": {
+                    "type": "String"
+                  },
+                  "genero": {
+                    "type": "String"
+                  },
+                  "endereco": {
+                    "type": "String"
+                  },
+                  "bairro": {
+                    "type": "String"
+                  },
+                  "cidade": {
+                    "type": "String"
+                  },
+                  "cep": {
+                    "type": "String"
+                  },
+                  "telefone1": {
+                    "type": "Number"
+                  },
+                  "telefone2": {
+                    "type": "Number"
+                  },
+                  "celular": {
+                    "type": "String"
+                  },
+                  "contato": {
+                    "type": "String"
+                  },
+                  "email": {
+                    "type": "String"
+                  },
+                  "identidade": {
+                    "type": "String"
+                  },
+                  "cpf": {
+                    "type": "String"
+                  },
+                  "veiculo": {
+                    "type": "String"
+                  },
+                  "habilitacao": {
+                    "type": "String"
+                  }
+                }
+              },
+              "examples": {
+                "João": {
+                  "value": {
+                    "nome": "João Paulo",
+                    "cargo": "Dev Fullstack",
+                    "nascimento": 18041994,
+                    "ecivil": "Solteiro"
+                  },
+                  "genero": "Masculino Cis",
+                  "endereco": "Rua da calmaria",
+                  "bairro": "Tranquilo",
+                  "cidade": "Aracaju",
+                  "cep": 49000000,
+                  "telefone1": 99999999999,
+                  "telefone2": 99999999999,
+                  "celular": 99999999999,
+                  "contato": 99999999999,
+                  "email": "joao@email.com",
+                  "identidade": 999999999,
+                  "cpf": 99999999999,
+                  "veiculo": "Sim",
+                  "habilitacao": "B"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
