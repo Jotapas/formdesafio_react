@@ -4,8 +4,9 @@
   "info": {
     "title": "Swagger Petstore",
     "description": "API para formulário em React e NodeJS",
-    "version": "1.0.0"
+    "version": "0.0.1"
   },
+
   "servers": [
     {
   
@@ -14,6 +15,7 @@
     
     }
   ],
+
   "paths": {
     "/register": {
       "post": {
@@ -25,14 +27,14 @@
             "application/json": {
               "schema": {
                 "properties": {
-                  "nome": {
+                  "name": {
                     "type": "string"
                   },
                   "cargo": {
                     "type": "String"
                   },
                   "nascimento": {
-                    "type": "string"
+                    "type": "Number"
                   },
                   "ecivil": {
                     "type": "String"
@@ -50,7 +52,7 @@
                     "type": "String"
                   },
                   "cep": {
-                    "type": "String"
+                    "type": "Number"
                   },
                   "telefone1": {
                     "type": "Number"
@@ -59,19 +61,19 @@
                     "type": "Number"
                   },
                   "celular": {
-                    "type": "String"
+                    "type": "Number"
                   },
                   "contato": {
-                    "type": "String"
+                    "type": "Number"
                   },
                   "email": {
                     "type": "String"
                   },
                   "identidade": {
-                    "type": "String"
+                    "type": "Number"
                   },
                   "cpf": {
-                    "type": "String"
+                    "type": "Number"
                   },
                   "veiculo": {
                     "type": "String"
@@ -84,29 +86,14 @@
               "examples": {
                 "João": {
                   "value": {
-                    "nome": "João Paulo",
-                    "cargo": "Dev Fullstack",
-                    "nascimento": 18041994,
-                    "ecivil": "Solteiro"
-                  },
-                  "genero": "Masculino Cis",
-                  "endereco": "Rua da calmaria",
-                  "bairro": "Tranquilo",
-                  "cidade": "Aracaju",
-                  "cep": 49000000,
-                  "telefone1": 99999999999,
-                  "telefone2": 99999999999,
-                  "celular": 99999999999,
-                  "contato": 99999999999,
-                  "email": "joao@email.com",
-                  "identidade": 999999999,
-                  "cpf": 99999999999,
-                  "veiculo": "Sim",
-                  "habilitacao": "B"
+                      "name": "João Paulo",
+                      "cargo": "Dev Fullstack"
+                     
+                    }
+                  }
                 }
               }
             }
-          }
         }
       }
     }
